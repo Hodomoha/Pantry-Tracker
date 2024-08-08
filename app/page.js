@@ -70,13 +70,18 @@ export default function Home() {
 
   return (
     <Box 
-    width="100vw" 
-    height="100vh" 
-    display = "flex" 
-    flexDirection="column"
-    justifyContent="center"
-    alignItems="center"
-    gap={2}
+      width="100vw" 
+      height="100vh" 
+      display = "flex" 
+      flexDirection="column"
+      justifyContent="center"
+      alignItems="center"
+      gap={2}
+      sx={{
+        backgroundImage: 'url(/snacks.jpg)',
+        backgroundSize: 'cover',
+        backgroundPosition: 'fixed',
+      }}
     >
       <Modal
       open = {open}
@@ -138,7 +143,7 @@ export default function Home() {
         justifyContent="center"
         >
           <Typography variant = "h2" color = "#333" >
-            Inventory Items
+          Snack Pantry
           </Typography>
         </Box>
       <Stack width="800px" height="300px" spacing={2} overflow="auto">
